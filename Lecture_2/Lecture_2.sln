@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstAvaloniaApplication", "FirstAvaloniaApplication\FirstAvaloniaApplication.csproj", "{C0B6B9F6-B198-48B4-8CE1-39E6E8C54833}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithTextBox", "AvaloniaApplicationWithTextBox\AvaloniaApplicationWithTextBox.csproj", "{FCC5A9EE-65C7-463B-93C5-726926A7DEE7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithStackPanel", "AvaloniaApplicationWithStackPanel\AvaloniaApplicationWithStackPanel.csproj", "{7FE19EFB-5757-46C3-8132-E01B58B55748}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithWrapPanel", "AvaloniaApplicationWithWrapPanel\AvaloniaApplicationWithWrapPanel.csproj", "{7D1AE262-7EDF-45BF-9D8C-5123E0557972}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithScrollViewer", "AvaloniaApplicationWithScrollViewer\AvaloniaApplicationWithScrollViewer.csproj", "{7B3F6E5E-9AEA-494C-8F1E-C137582E95B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithGrid", "AvaloniaApplicationWithGrid\AvaloniaApplicationWithGrid.csproj", "{2EC4517B-B483-4928-BA2F-919807726C2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithEmptyGrid", "AvaloniaApplicationWithEmptyGrid\AvaloniaApplicationWithEmptyGrid.csproj", "{CF966CAB-FD1E-4C06-B1F1-246D9B23BFF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithGridSplitter", "AvaloniaApplicationWithGridSplitter\AvaloniaApplicationWithGridSplitter.csproj", "{B89B2565-9E89-4720-BA1F-9FB401DEE259}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AvaloniaApplicationWithButton", "AvaloniaApplicationWithButton\AvaloniaApplicationWithButton.csproj", "{C77A1E2D-8D1C-4675-AE9A-0ABBDA95318E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppWithEvent", "ConsoleAppWithEvent\ConsoleAppWithEvent.csproj", "{E9611F41-EC6A-4361-A71D-314329BDBD22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C0B6B9F6-B198-48B4-8CE1-39E6E8C54833}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0B6B9F6-B198-48B4-8CE1-39E6E8C54833}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0B6B9F6-B198-48B4-8CE1-39E6E8C54833}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0B6B9F6-B198-48B4-8CE1-39E6E8C54833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC5A9EE-65C7-463B-93C5-726926A7DEE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC5A9EE-65C7-463B-93C5-726926A7DEE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC5A9EE-65C7-463B-93C5-726926A7DEE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC5A9EE-65C7-463B-93C5-726926A7DEE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE19EFB-5757-46C3-8132-E01B58B55748}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE19EFB-5757-46C3-8132-E01B58B55748}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE19EFB-5757-46C3-8132-E01B58B55748}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE19EFB-5757-46C3-8132-E01B58B55748}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1AE262-7EDF-45BF-9D8C-5123E0557972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1AE262-7EDF-45BF-9D8C-5123E0557972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1AE262-7EDF-45BF-9D8C-5123E0557972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1AE262-7EDF-45BF-9D8C-5123E0557972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B3F6E5E-9AEA-494C-8F1E-C137582E95B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B3F6E5E-9AEA-494C-8F1E-C137582E95B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B3F6E5E-9AEA-494C-8F1E-C137582E95B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B3F6E5E-9AEA-494C-8F1E-C137582E95B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC4517B-B483-4928-BA2F-919807726C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC4517B-B483-4928-BA2F-919807726C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC4517B-B483-4928-BA2F-919807726C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC4517B-B483-4928-BA2F-919807726C2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF966CAB-FD1E-4C06-B1F1-246D9B23BFF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF966CAB-FD1E-4C06-B1F1-246D9B23BFF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF966CAB-FD1E-4C06-B1F1-246D9B23BFF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF966CAB-FD1E-4C06-B1F1-246D9B23BFF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89B2565-9E89-4720-BA1F-9FB401DEE259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89B2565-9E89-4720-BA1F-9FB401DEE259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89B2565-9E89-4720-BA1F-9FB401DEE259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89B2565-9E89-4720-BA1F-9FB401DEE259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77A1E2D-8D1C-4675-AE9A-0ABBDA95318E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77A1E2D-8D1C-4675-AE9A-0ABBDA95318E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77A1E2D-8D1C-4675-AE9A-0ABBDA95318E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77A1E2D-8D1C-4675-AE9A-0ABBDA95318E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9611F41-EC6A-4361-A71D-314329BDBD22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9611F41-EC6A-4361-A71D-314329BDBD22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9611F41-EC6A-4361-A71D-314329BDBD22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9611F41-EC6A-4361-A71D-314329BDBD22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0BEA173-FEBD-4438-BFD0-D29423A86B10}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,57 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplicationWithWrapPanel.MainWindow"
+        Title="AvaloniaApplicationWithWrapPanel">
+    <WrapPanel>
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="AliceBlue"/>
+		</Border>
+
+		<Border BorderThickness="2" BorderBrush="DarkOrange">
+			<Rectangle Width="100" Height="100" Fill="AntiqueWhite"/>
+		</Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Aqua"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Aquamarine"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Azure"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Beige"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Bisque"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Black"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="BlanchedAlmond"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="AliceBlue"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="Blue"/>
+        </Border>
+
+        <Border BorderThickness="2" BorderBrush="DarkOrange">
+            <Rectangle Width="100" Height="100" Fill="BlueViolet"/>
+        </Border>
+    </WrapPanel>
+</Window>

@@ -1,0 +1,65 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="350"
+        x:Class="AvaloniaApplicationWithStackPanel.MainWindow"
+        Title="AvaloniaApplicationWithStackPanel">
+    <StackPanel Width="300" Height="300">
+        <Button
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_1
+        </Button>
+
+        <Button
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_2
+        </Button>
+
+		<Button 
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_3
+        </Button>
+
+        <Button 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_4
+        </Button>
+
+        <Button
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_5
+        </Button>
+
+        <Button
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_6
+        </Button>
+
+        <Button 
+            HorizontalAlignment="Stretch" 
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_7
+        </Button>
+
+        <Button 
+            HorizontalAlignment="Stretch"
+            VerticalAlignment="Stretch"
+            HorizontalContentAlignment="Center">
+            Button_8
+        </Button>
+    </StackPanel>
+</Window>

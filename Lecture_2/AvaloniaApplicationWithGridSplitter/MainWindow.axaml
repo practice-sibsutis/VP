@@ -1,0 +1,39 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplicationWithGridSplitter.MainWindow"
+        Title="AvaloniaApplicationWithGridSplitter">
+	<Grid ColumnDefinitions="100, 4, 0.5*, 4, *" RowDefinitions="100, 4, 0.5*, 4, Auto">
+        <GridSplitter Grid.Column="1"
+                      Grid.RowSpan="5"
+                      ResizeDirection="Columns"
+                      Background="Black"/>
+
+        <GridSplitter Grid.Column="3"
+                      Grid.RowSpan="5"
+                      ResizeDirection="Columns"
+                      Background="Black"/>
+
+        <GridSplitter Grid.Row="1"
+                      Grid.ColumnSpan="5"
+                      ResizeDirection="Rows"
+                      Background="Green"/>
+
+        <GridSplitter Grid.Column="0" Grid.Row="3"
+                      Grid.ColumnSpan="4"
+                      ResizeDirection="Rows"
+                      Background="Green"/>
+
+        <Rectangle Grid.Column="0" Grid.Row="0" Fill="Aqua"></Rectangle>
+        <Rectangle Grid.Column="2" Grid.Row="0" Fill="BlueViolet"></Rectangle>
+        <Rectangle Grid.Column="4" Grid.Row="0" Fill="Chocolate"></Rectangle>
+		<Rectangle Grid.Column="0" Grid.Row="2" Fill="Blue" Width="100" Height="100"></Rectangle>
+        <Rectangle Grid.Column="2" Grid.Row="2" Fill="ForestGreen"></Rectangle>
+        <Rectangle Grid.Column="4" Grid.Row="2" Fill="HotPink"></Rectangle>
+		<Rectangle Grid.Column="0" Grid.Row="4" Fill="Chartreuse" Width="100" Height="100"></Rectangle>
+		<Rectangle Grid.Column="2" Grid.Row="4" Fill="Crimson" Height="200"></Rectangle>
+        <Rectangle Grid.Column="4" Grid.Row="4" Fill="CornflowerBlue" Height="200"></Rectangle>
+	</Grid>
+</Window>

@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplicationWithScrollViewer.MainWindow"
+        Title="AvaloniaApplicationWithScrollViewer">
+	<ScrollViewer Width="300" Height="300">
+		<WrapPanel>
+			<Rectangle Width="100" Height="100" Fill="AliceBlue"/>
+			<Rectangle Width="100" Height="100" Fill="AntiqueWhite"/>
+			<Rectangle Width="100" Height="100" Fill="Aqua"/>
+			<Rectangle Width="100" Height="100" Fill="Aquamarine"/>
+			<Rectangle Width="100" Height="100" Fill="Azure"/>
+			<Rectangle Width="100" Height="100" Fill="Beige"/>
+			<Rectangle Width="100" Height="100" Fill="Bisque"/>
+			<Rectangle Width="100" Height="100" Fill="Black"/>
+			<Rectangle Width="100" Height="100" Fill="BlanchedAlmond"/>
+			<Rectangle Width="100" Height="100" Fill="AliceBlue"/>
+			<Rectangle Width="100" Height="100" Fill="Blue"/>
+			<Rectangle Width="100" Height="100" Fill="BlueViolet"/>
+		</WrapPanel>
+	</ScrollViewer>
+</Window>

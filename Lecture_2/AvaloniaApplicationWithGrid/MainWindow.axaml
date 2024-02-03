@@ -1,0 +1,16 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="AvaloniaApplicationWithGrid.MainWindow"
+        Title="AvaloniaApplicationWithGrid">
+    <Grid ColumnDefinitions="100, 0.5*, *" RowDefinitions="100, 0.5*, Auto" ShowGridLines="True">
+        <Rectangle Grid.Column="0" Grid.Row="0" Fill="Aqua"></Rectangle>
+        <Rectangle Grid.Column="0" Grid.Row="1" Fill="Blue" Width="100" Height="100"></Rectangle>
+        <Rectangle Grid.Column="1" Grid.Row="0" Fill="BlueViolet" Grid.RowSpan="2"></Rectangle>
+        <Rectangle Grid.Column="2" Grid.Row="0" Fill="Chocolate" Grid.RowSpan="2"></Rectangle>
+        <Rectangle Grid.Column="0" Grid.Row="2" Fill="Chartreuse" Width="100" Height="100"></Rectangle>
+        <Rectangle Grid.Column="1" Grid.Row="2" Fill="Crimson" Height="200" Grid.ColumnSpan="2"></Rectangle>
+    </Grid>
+</Window>
