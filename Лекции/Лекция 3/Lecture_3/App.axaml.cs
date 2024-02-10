@@ -18,7 +18,7 @@ namespace Lecture_3
                 desktop.MainWindow = new MainWindow()
                 {
                     DataContext = new DataContextMainWindow(),
-                }
+                };
             }
 
             base.OnFrameworkInitializationCompleted();
