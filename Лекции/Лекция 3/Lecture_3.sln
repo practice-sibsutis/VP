@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataBindingExample", "Lectu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverterExample", "ConverterExample\ConverterExample.csproj", "{7E46A77F-44C8-46F1-8AA8-6209A27126A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncValueConverterExample", "FuncValueConverterExample\FuncValueConverterExample.csproj", "{812E0372-F279-4DA6-9577-B5F653CB9114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{7E46A77F-44C8-46F1-8AA8-6209A27126A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7E46A77F-44C8-46F1-8AA8-6209A27126A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7E46A77F-44C8-46F1-8AA8-6209A27126A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{812E0372-F279-4DA6-9577-B5F653CB9114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812E0372-F279-4DA6-9577-B5F653CB9114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812E0372-F279-4DA6-9577-B5F653CB9114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812E0372-F279-4DA6-9577-B5F653CB9114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
