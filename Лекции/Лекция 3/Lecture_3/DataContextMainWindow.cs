@@ -21,12 +21,22 @@ public class DataContextMainWindow : INotifyPropertyChanged
         }
     }
 
-    public void ExecuteCommand(string? text)
+    public void ExecuteCommand(object parameter)
     {
-        if (text != null)
+        if (parameter is string text)
         {
             Text = text;
         }
+    }
+
+    public bool CanExecuteCommand(object parameter)
+    {
+        if (parameter is string text)
+        {
+            return text.StartsWith("Hello") == false;
+        }
+
+        return false;
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
