@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:con="clr-namespace:ConverterExample"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ConverterExample.MainWindow"
+        Title="ConverterExample">
+
+    <Window.Resources>
+        <con:TextToColorConverter x:Key="TextToColorConverter"/>
+    </Window.Resources>
+
+    <Grid ColumnDefinitions="*, 3*" RowDefinitions="*, 10*">
+        <TextBox Name="ColorName" Grid.Column="0" Grid.Row="0" Watermark="Введите название цвета"/>
+		<Rectangle Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"
+                   Fill="{Binding #ColorName.Text,
+				   Converter={StaticResource TextToColorConverter}}"/>
+    </Grid>
+</Window>
