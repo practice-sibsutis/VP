@@ -12,9 +12,5 @@
         <dc:DataContextMainWindow/>
     </Design.DataContext>
 
-    <Window.DataContext>
-        <dc:DataContextMainWindow/>
-    </Window.DataContext>
-
     <TextBlock Text="{Binding Text}"/>
 </Window>
