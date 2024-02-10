@@ -12,5 +12,9 @@
         <dc:DataContextMainWindow/>
     </Design.DataContext>
 
-    Welcome to Avalonia!
+    <Window.DataContext>
+        <dc:DataContextMainWindow/>
+    </Window.DataContext>
+
+    <TextBlock Text="{Binding Text}"/>
 </Window>
