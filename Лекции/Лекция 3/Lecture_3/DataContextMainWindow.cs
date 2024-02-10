@@ -10,5 +10,15 @@ public class DataContextMainWindow
         {
             return _text;
         }
+
+        set
+        {
+            _text = value;
+        }
+    }
+
+    public void ExecuteCommand()
+    {
+        Text = "Hello Avalonia";
     }
 }

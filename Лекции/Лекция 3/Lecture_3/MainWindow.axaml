@@ -12,5 +12,9 @@
         <dc:DataContextMainWindow/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Text}"/>
+    <StackPanel>
+        <TextBlock Text="{Binding Text}"/>
+        <Button Content="Click Me" Command="{Binding ExecuteCommand}"/>
+    </StackPanel>
+
 </Window>
