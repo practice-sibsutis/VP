@@ -5,6 +5,12 @@
         xmlns:dc="clr-namespace:Lecture_3"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Lecture_3.MainWindow"
+        x:DataType="dc:DataContextMainWindow"
         Title="Lecture_3">
+
+    <Design.DataContext>
+        <dc:DataContextMainWindow/>
+    </Design.DataContext>
+
     Welcome to Avalonia!
 </Window>
