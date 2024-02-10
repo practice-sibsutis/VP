@@ -14,7 +14,8 @@
 
     <StackPanel>
         <TextBlock Text="{Binding Text}"/>
-        <Button Content="Click Me" Command="{Binding ExecuteCommand}"/>
+        <Button Content="Click Me" Command="{Binding ExecuteCommand}"
+                CommandParameter="Hello Avalonia"/>
     </StackPanel>
 
 </Window>

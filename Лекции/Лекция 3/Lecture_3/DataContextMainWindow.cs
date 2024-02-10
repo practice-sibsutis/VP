@@ -21,9 +21,12 @@ public class DataContextMainWindow : INotifyPropertyChanged
         }
     }
 
-    public void ExecuteCommand()
+    public void ExecuteCommand(string? text)
     {
-        Text = "Hello Avalonia";
+        if (text != null)
+        {
+            Text = text;
+        }
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
