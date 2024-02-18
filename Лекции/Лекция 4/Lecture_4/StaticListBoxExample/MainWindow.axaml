@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="StaticListBoxExample.MainWindow"
+        Title="StaticListBoxExample">
+    <ListBox>
+        <ListBoxItem Background="Aquamarine">
+            <Grid ColumnDefinitions="3*, *" RowDefinitions="*">
+                <TextBlock Grid.Column="0">Hello</TextBlock>
+                <Button Grid.Column="1">Click Me!</Button>
+            </Grid>
+        </ListBoxItem>
+
+        <ListBoxItem Background="CornflowerBlue">
+            <Grid ColumnDefinitions="3*, *" RowDefinitions="*">
+                <TextBlock Grid.Column="0">World</TextBlock>
+                <Button Grid.Column="1">Click Me!</Button>
+            </Grid>
+        </ListBoxItem>
+
+        <ListBoxItem Background="HotPink">
+            <Grid ColumnDefinitions="3*, *" RowDefinitions="*">
+                <TextBlock Grid.Column="0">Hello</TextBlock>
+                <Button Grid.Column="1">Click Me!</Button>
+            </Grid>
+        </ListBoxItem>
+
+        <ListBoxItem Background="GreenYellow">
+            <Grid ColumnDefinitions="3*, *" RowDefinitions="*">
+                <TextBlock Grid.Column="0">Avalonia</TextBlock>
+                <Button Grid.Column="1">Click Me!</Button>
+            </Grid>
+        </ListBoxItem>
+
+    </ListBox>
+</Window>

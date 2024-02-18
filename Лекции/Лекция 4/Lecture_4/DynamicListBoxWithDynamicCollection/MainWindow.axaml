@@ -1,0 +1,29 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:local="clr-namespace:DynamicListBoxWithDynamicCollection"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DynamicListBoxWithDynamicCollection.MainWindow"
+        Title="DynamicListBoxWithDynamicCollection"
+        x:DataType="local:DataContextWithCollection">
+
+    <Window.DataContext>
+		<local:DataContextWithCollection/>
+	</Window.DataContext>
+
+	<ListBox ItemsSource="{Binding Collection}">
+		<ListBox.ItemTemplate>
+			<DataTemplate>
+				<Grid ColumnDefinitions="3*, *">
+					<TextBlock Grid.Column="0" Text="{Binding }"/>
+					<Button Grid.Column="1"
+							Command="{Binding $parent[ListBox].((local:DataContextWithCollection)DataContext).RemoveData}"
+							CommandParameter="{Binding}">
+						Delete
+					</Button>
+				</Grid>
+			</DataTemplate>
+		</ListBox.ItemTemplate>
+	</ListBox>
+</Window>

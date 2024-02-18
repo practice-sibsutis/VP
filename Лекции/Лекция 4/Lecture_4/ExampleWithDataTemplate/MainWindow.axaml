@@ -1,0 +1,42 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExampleWithDataTemplate"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="ExampleWithDataTemplate.MainWindow"
+        Title="ExampleWithDataTemplate">
+
+    <Window.DataContext>
+        <local:DataContextWithTeacher/>
+    </Window.DataContext>
+    
+    <Window.DataTemplates>
+        <DataTemplate DataType="{x:Type local:Student}">
+            <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto">
+                <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20">First Name:</TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" FontSize="20" Text="{Binding FirstName}"/>
+                <TextBlock Grid.Row="1" Grid.Column="0" FontSize="20">Last Name:</TextBlock>
+                <TextBlock Grid.Row="1" Grid.Column="1" FontSize="20" Text="{Binding LastName}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type local:Teacher}">
+            <Grid ColumnDefinitions="Auto,4,Auto">
+                <TextBlock Grid.Row="0" Grid.Column="0" FontSize="20">Professor</TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="2" FontSize="20" Text="{Binding LastName}"/>
+            </Grid>
+        </DataTemplate>
+    </Window.DataTemplates>
+
+    <StackPanel>
+        <ContentControl>
+            <local:Student FirstName="Anton" LastName="Mileshko"/>
+        </ContentControl>
+
+		<!--TextBlock чтобы разделить вывод-->
+        <TextBlock/>
+        
+        <ContentControl Content="{Binding Teacher, DataType=local:DataContextWithTeacher}"/>
+    </StackPanel>
+</Window>
