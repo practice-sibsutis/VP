@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34511.84
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRPExample", "SRPExample\SRPExample.csproj", "{72998D0B-914B-431F-AAA1-6C18A763AD2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SRPExample", "SRPExample\SRPExample.csproj", "{72998D0B-914B-431F-AAA1-6C18A763AD2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCPExample", "OCPExample\OCPExample.csproj", "{F1AA8DBA-499B-4DF4-B1A4-FE3D41B2A536}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OCPExample", "OCPExample\OCPExample.csproj", "{F1AA8DBA-499B-4DF4-B1A4-FE3D41B2A536}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSPExample", "LSPExample\LSPExample.csproj", "{6E6F626E-C123-4121-9D53-42E982F8E2A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSPExample", "LSPExample\LSPExample.csproj", "{6E6F626E-C123-4121-9D53-42E982F8E2A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISPExample", "ISPExample\ISPExample.csproj", "{A6865185-89EA-4481-8BE4-E39B5C66BAC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISPExample", "ISPExample\ISPExample.csproj", "{A6865185-89EA-4481-8BE4-E39B5C66BAC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DIPExample", "DIPExample\DIPExample.csproj", "{EA2D1A35-9C30-4B97-BC5D-9D46C4F3E09F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DIPExample", "DIPExample\DIPExample.csproj", "{EA2D1A35-9C30-4B97-BC5D-9D46C4F3E09F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoCExample", "DIExample\DIExample\IoCExample.csproj", "{3F9EE3CC-1AA1-4DFD-8B0F-4B6C0BB74259}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoCExample", "DIExample\IoCExample.csproj", "{4A2CA350-2392-4E5F-ADBA-9795FD5ECA1C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{EA2D1A35-9C30-4B97-BC5D-9D46C4F3E09F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2D1A35-9C30-4B97-BC5D-9D46C4F3E09F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA2D1A35-9C30-4B97-BC5D-9D46C4F3E09F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3F9EE3CC-1AA1-4DFD-8B0F-4B6C0BB74259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3F9EE3CC-1AA1-4DFD-8B0F-4B6C0BB74259}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3F9EE3CC-1AA1-4DFD-8B0F-4B6C0BB74259}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3F9EE3CC-1AA1-4DFD-8B0F-4B6C0BB74259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A2CA350-2392-4E5F-ADBA-9795FD5ECA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2CA350-2392-4E5F-ADBA-9795FD5ECA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A2CA350-2392-4E5F-ADBA-9795FD5ECA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2CA350-2392-4E5F-ADBA-9795FD5ECA1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
