@@ -13,6 +13,6 @@ services = services.AddTransient<ILogger, ConsoleLogger>()
 var serviceProvider = services.BuildServiceProvider();
 
 Invoice invoice = serviceProvider.GetService<Invoice>();
-Invoice invoice1 = new Invoice(new EmailNotifyer("asdas"),
+/*Invoice invoice1 = new Invoice(new TelegramNotifyer("asdas"),
     new ConsoleLogger());
-
+*/
