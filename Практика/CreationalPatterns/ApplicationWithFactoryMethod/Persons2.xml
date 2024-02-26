@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <person name="Biba">
+    <age>20</age>
+    <university>NSTU</university>
+  </person>
+  <person name="Boba">
+    <age>18</age>
+    <university>NSU</university>
+  </person>
+</people>
