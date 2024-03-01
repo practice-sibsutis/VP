@@ -16,7 +16,6 @@ namespace AvaloniaApplicationWithButton
             ++counter;
             Label clickCounter = this.GetControl<Label>("ClickCounter");
             clickCounter.Content = counter.ToString();
-            args.Handled = false;
         }
     }
 }

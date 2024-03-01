@@ -5,5 +5,5 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaApplicationWithTextBox.MainWindow"
         Title="AvaloniaApplicationWithTextBox">
-    <TextBox Text ="Welcome to Avalonia!" AcceptsReturn="True"/>
+    <TextBox Text="Welcome to Avalonia!" AcceptsReturn="True"/>
 </Window>

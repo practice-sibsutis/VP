@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        Width="800"
+        x:Class="DialogWindowExample.MainWindow"
+        Title="DialogWindowExample">
+    <StackPanel Width="{Binding $parent[Window].Width}">
+        <Button 
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Center"
+            Tapped="CreateOpenFileDialogTapped">
+            Create open file dialog
+        </Button>
+
+		<Button
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Center"
+            Tapped="CreateSaveFileDialogTapped">
+            Create save file dialog
+        </Button>
+		
+        <Button
+            HorizontalAlignment="Stretch"
+            HorizontalContentAlignment="Center"
+            Tapped="CreateCustomDialogTapped">
+            Create custom dialog
+        </Button>
+
+        <TextBlock Name="Msg"/>
+    </StackPanel>
+</Window>
