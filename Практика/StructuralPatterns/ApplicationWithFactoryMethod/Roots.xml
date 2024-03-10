@@ -1,5 +1,11 @@
-﻿<linker>
-  <!-- Can be removed if CompiledBinding and no reflection are used -->
-  <assembly fullname="ApplicationWithFactoryMethod" preserve="All" />
-  <assembly fullname="Avalonia.Themes.Fluent" preserve="All" />
-</linker>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people>
+  <person name="Biba">
+    <age>20</age>
+    <university>NSTU</university>
+  </person>
+  <person name="Boba">
+    <age>30</age>
+    <university>NSU</university>
+  </person>
+</people>
