@@ -1,0 +1,28 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:CustomTemplatedControl.Control">
+  <Design.PreviewWith>
+    <controls:CustomButtonControl />
+  </Design.PreviewWith>
+
+  <Style Selector="controls|CustomButtonControl">
+    <!-- Set Defaults -->
+    <Setter Property="Template">
+		<ControlTemplate>
+            <Canvas Height="100" Width="150" Background="Transparent">
+                <Button CornerRadius="20" Background="Green" Canvas.Top="30" Canvas.Left="10"
+                        Command="{TemplateBinding	LeftButtonCommand}"
+                        CommandParameter="{TemplateBinding LeftButtonCommandParameter}">
+                    <Ellipse Width="25" Height="30" Fill="Transparent"/>
+                </Button>
+
+                <Button CornerRadius="20" Background="BlueViolet" Canvas.Top="30" Canvas.Left="100"
+                        Command="{TemplateBinding	RightButtonCommand}"
+                        CommandParameter="{TemplateBinding RightButtonCommandParameter}">
+                    <Ellipse Width="25" Height="30" Fill="Transparent"/>
+                </Button>
+            </Canvas>
+        </ControlTemplate>
+    </Setter>
+  </Style>
+</Styles>
