@@ -1,0 +1,108 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GeometriesExample.Views.PathGeometryView">
+  <WrapPanel>
+      <Path Stroke="Black" Fill="Gray" StrokeThickness="2">
+          <Path.Data>
+              <PathGeometry Figures="M 10,100 C 10,300 300,-200 300,100" />
+          </Path.Data>
+      </Path>
+
+	  <!--Линии-->
+      <Grid>
+          <Grid.ColumnDefinitions>
+              <ColumnDefinition />
+              <ColumnDefinition />
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+              <RowDefinition />
+              <RowDefinition />
+          </Grid.RowDefinitions>
+
+          <Path Fill="LightPink" Stroke="Blue"
+                StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure IsClosed="True" StartPoint="10,100">
+                          <LineSegment Point="100,100" />
+                          <LineSegment Point="100,50" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+          
+          <Path Grid.Column="1" Fill="LightPink" Stroke="Blue"
+                StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure IsClosed="False" StartPoint="10,100">
+                          <LineSegment Point="100,100" />
+                          <LineSegment Point="100,50" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+          
+          <Path Grid.Row="1"  Stroke="Blue"
+                StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure IsClosed="True" StartPoint="10,100">
+                          <LineSegment Point="100,100" />
+                          <LineSegment Point="100,50" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+          
+          <Path Grid.Row="1" Grid.Column="1"  Fill="LightPink"
+                StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure StartPoint="10,100">
+                          <LineSegment Point="100,100" />
+                          <LineSegment Point="100,50" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+      </Grid>
+
+	  <!--Дуга-->
+	  <Path Stroke="Red" StrokeThickness="3">
+          <Path.Data>
+              <PathGeometry>
+                  <PathFigure IsClosed="False" StartPoint="10,110">
+                      <ArcSegment Point="250,150" Size="150,200" />
+                  </PathFigure>
+              </PathGeometry>
+          </Path.Data>
+      </Path>
+
+	  <!--Кривые безье-->
+      <Grid>
+          <Path Stroke="Blue" StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure StartPoint="60,10">
+                          <BezierSegment Point1="180,30" Point2="100,140" Point3="210,150" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+
+          <Path Stroke="Red" StrokeThickness="3">
+              <Path.Data>
+                  <PathGeometry>
+                      <PathFigure IsClosed="False" StartPoint="10,110">
+                          <QuadraticBezierSegment Point1="130,130" Point2="40,240" />
+                      </PathFigure>
+                  </PathGeometry>
+              </Path.Data>
+          </Path>
+      </Grid>
+  </WrapPanel>
+</UserControl>

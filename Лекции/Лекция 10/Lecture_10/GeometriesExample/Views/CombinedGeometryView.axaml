@@ -1,0 +1,91 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GeometriesExample.Views.CombinedGeometryView">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+			<RowDefinition />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="3*"/>
+			<ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+		<Path Fill="LightPink" Stroke="LightBlue"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Union">
+					<CombinedGeometry.Geometry1>
+						<EllipseGeometry Center="50,60" RadiusX="50" RadiusY="50" />
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<RectangleGeometry Rect="60, 20 120,80" />
+					</CombinedGeometry.Geometry2>
+				</CombinedGeometry>
+			</Path.Data>
+		</Path>
+		<Path Grid.Row="1" Fill="LightPink" Stroke="LightBlue"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Xor">
+					<CombinedGeometry.Geometry1>
+						<EllipseGeometry Center="50,60" RadiusX="50" RadiusY="50" />
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<RectangleGeometry Rect="60, 20 120,80" />
+					</CombinedGeometry.Geometry2>
+				</CombinedGeometry>
+			</Path.Data>
+		</Path>
+		<Path Grid.Row="2" Fill="LightPink" Stroke="LightBlue"
+			  HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Intersect">
+					<CombinedGeometry.Geometry1>
+						<EllipseGeometry Center="50,60" RadiusX="50" RadiusY="50" />
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<RectangleGeometry Rect="60, 20 120,80" />
+					</CombinedGeometry.Geometry2>
+				</CombinedGeometry>
+			</Path.Data>
+		</Path>
+		<Path Grid.Row="3" Fill="LightPink" Stroke="LightBlue"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center">
+			<Path.Data>
+				<CombinedGeometry GeometryCombineMode="Exclude">
+					<CombinedGeometry.Geometry1>
+						<EllipseGeometry Center="50,60" RadiusX="50" RadiusY="50" />
+					</CombinedGeometry.Geometry1>
+					<CombinedGeometry.Geometry2>
+						<RectangleGeometry Rect="60, 20 120,80" />
+					</CombinedGeometry.Geometry2>
+				</CombinedGeometry>
+			</Path.Data>
+		</Path>
+
+		<TextBlock Grid.Column="1" Grid.Row="0" Text="Union" FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Xor" FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Intersect" FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Exclude" FontSize="20"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"/>
+	</Grid>
+</UserControl>

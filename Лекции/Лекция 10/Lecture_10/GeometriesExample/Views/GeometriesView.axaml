@@ -1,0 +1,49 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="GeometriesExample.Views.GeometriesView">
+  <WrapPanel>
+      <Path Stroke="Blue" StrokeThickness="4">
+          <Path.Data>
+              <LineGeometry StartPoint="100,30" EndPoint="200,130" />
+          </Path.Data>
+      </Path>
+
+      <Path Fill="LightBlue">
+          <Path.Data>
+              <RectangleGeometry Rect="100,20 100,50" />
+          </Path.Data>
+      </Path>
+
+      <Path Fill="LightPink" Stroke="LightBlue">
+          <Path.Data>
+              <EllipseGeometry RadiusX="50" RadiusY="25" Center="120,70" />
+          </Path.Data>
+      </Path>
+
+      <Path Stroke="DarkOrchid" StrokeThickness="3">
+          <Path.Data>
+              <PolylineGeometry Points="50, 150, 150, 50, 250, 150"></PolylineGeometry>
+          </Path.Data>
+      </Path>
+
+      <!--
+		Мини-язык для StreamGeometry
+		https://learn.microsoft.com/ru-ru/dotnet/desktop/wpf/graphics-multimedia/path-markup-syntax?view=netframeworkdesktop-4.8
+		-->
+      <Path Data="F0 M10,100 L100,100 100,50Z"
+            StrokeThickness="3" Stroke="Black" Fill="DarkOrange"/>
+
+      <Path Fill="LightPink" Stroke="LightBlue" StrokeThickness="3">
+          <Path.Data>
+              <GeometryGroup  FillRule="NonZero">
+                  <LineGeometry StartPoint="10,10" EndPoint="220,10" />
+                  <EllipseGeometry Center="100,100" RadiusX="50" RadiusY="40"/>
+                  <RectangleGeometry Rect="120,100 80,20" />
+              </GeometryGroup>
+          </Path.Data>
+      </Path>
+  </WrapPanel>
+</UserControl>
